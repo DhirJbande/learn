@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Media Query Example</title>
+  <style>
+    /* Hide all h1 by default */
+    h1 {
+      display: none;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    /* Mobile: up to 480px */
+    @media (max-width: 480px) {
+      .mobile {
+        display: block;
+        color: green;
+      }
+    }
+
+    /* Tablet: 481px to 768px */
+    @media (min-width: 481px) and (max-width: 768px) {
+      .tablet {
+        display: block;
+        color: blue;
+      }
+    }
+
+    /* Desktop: 769px to 1024px */
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .desktop {
+        display: block;
+        color: orange;
+      }
+    }
+
+    /* Large Desktop: 1025px and above */
+    @media (min-width: 1025px) {
+      .large-desktop {
+        display: block;
+        color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="mobile">This is Mobile View</h1>
+  <h1 class="tablet">This is Tablet View</h1>
+  <h1 class="desktop">This is Desktop View</h1>
+  <h1 class="large-desktop">This is Large Desktop View</h1>
+
+</body>
+</html>
